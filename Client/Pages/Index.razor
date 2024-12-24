@@ -1,0 +1,285 @@
+﻿@page "/"
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SportMaster</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Спорт — это жизнь!</h2>
+                <p>Ознакомьтесь с нашим ассортиментом спортивной одежды и аксессуаров для активного образа жизни.</p>
+                <button onclick="location.href='#catalog'">Посмотреть каталог</button>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog">
+            <h2>Популярные товары</h2>
+            <div class="content-grid">
+                <div class="card">
+                    <img src="Img/Футболка.jpg" alt="Футболка">
+                    <h3>Футболка Adidas</h3>
+                    <p>1500₽</p>
+                    <button>Купить</button>
+                </div>
+                <div class="card">
+                    <img src="Img/184A4682.jpg" alt="Кроссовки">
+                    <h3>Кроссовки Nike</h3>
+                    <p>4500₽</p>
+                    <button>Купить</button>
+                </div>
+                <div class="card">
+                    <img src="Img/штаны.jpg" alt="Штаны">
+                    <h3>Штаны Puma</h3>
+                    <p>2500₽</p>
+                    <button>Купить</button>
+                </div>
+                <div class="card">
+                    <img src="Img/рюк.jpg" alt="Рюкзак">
+                    <h3>Рюкзак Columbia</h3>
+                    <p>3500₽</p>
+                    <button>Купить</button>
+                </div>
+                <div class="card">
+                    <img src="Img/шоррибок.jpg" alt="Шорты">
+                    <h3>Шорты Reebok</h3>
+                    <p>1200₽</p>
+                    <button>Купить</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>О нас</h2>
+            <p>SportMaster — это магазин спортивной одежды и аксессуаров, который помогает вам оставаться в форме и наслаждаться активным образом жизни. Мы предлагаем широкий выбор товаров от ведущих брендов по доступным ценам.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Связаться с нами</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SportMaster. Все права защищены.</p>
+    </footer>
+</body>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+        margin: 0;
+    }
+
+    header {
+        background: #007BFF;
+        color: #fff;
+        padding: 1rem 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+        .nav-links li {
+            margin: 0 0.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+            .nav-links a:hover {
+                color: #FFD700;
+            }
+
+    .hero {
+        background: linear-gradient(200deg, #007BFF, #0056b3);
+        color: #fff;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero button {
+            background: #FFD700;
+            color: #333;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+
+            .hero button:hover {
+                background: #333;
+                color: #FFD700;
+            }
+
+    .catalog {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+        .catalog h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+        }
+
+        .card button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+            .card button:hover {
+                background: #0056b3;
+            }
+
+    .about, .contact {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+        .about h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .contact input, .contact textarea {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            margin-top: 1rem;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+            .contact button:hover {
+                background: #0056b3;
+            }
+
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+</style>
