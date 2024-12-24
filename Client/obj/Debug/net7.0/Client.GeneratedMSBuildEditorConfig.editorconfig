@@ -1,4 +1,8 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -9,29 +13,31 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Client
 build_property.RootNamespace = Client
-build_property.ProjectDir = C:\Users\user\Desktop\CarsApi\Client\
+build_property.ProjectDir = C:\Users\timaf\OneDrive\Рабочий стол\Sport\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\CarsApi\Client
+build_property.MSBuildProjectDirectory = C:\Users\timaf\OneDrive\Рабочий стол\Sport\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Desktop/CarsApi/Client/App.razor]
+[C:/Users/timaf/OneDrive/Рабочий стол/Sport/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/CarsApi/Client/MainLayout.razor]
+[C:/Users/timaf/OneDrive/Рабочий стол/Sport/Client/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/CarsApi/Client/Pages/Index.razor]
+[C:/Users/timaf/OneDrive/Рабочий стол/Sport/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/CarsApi/Client/_Imports.razor]
+[C:/Users/timaf/OneDrive/Рабочий стол/Sport/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/CarsApi/Client/Pages/Product.cshtml]
+[C:/Users/timaf/OneDrive/Рабочий стол/Sport/Client/Pages/Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
