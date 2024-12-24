@@ -11,16 +11,14 @@ namespace SportMaster
         {
             var builder = WebApplication.CreateBuilder(args);
 
-
-            var connectionString = builder.Configuration["ConnectionString"];
-            if (string.IsNullOrEmpty(connectionString))
+            // Настройка HTTPS
+            builder.WebHost.UseKestrel(options =>
             {
-                throw new InvalidOperationException("ConnectionString is missing in configuration.");
-            }
-
-
-            builder.Services.AddDbContext<A1waezzkyContext>(
-                options => options.UseSqlServer(connectionString));
+                options.ListenAnyIP(5001, listenOptions =>
+                {
+                    listenOptions.UseHttps();
+                });
+            });
 
             // Настройка CORS
             builder.Services.AddCors(options =>
@@ -47,6 +45,7 @@ namespace SportMaster
                 app.UseSwaggerUI();
             }
 
+            app.UseHttpsRedirection(); // Перенаправление HTTP на HTTPS
             app.UseAuthorization();
 
             // Использование CORS

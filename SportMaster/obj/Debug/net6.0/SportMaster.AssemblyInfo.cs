@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SportMaster")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6b665fdd04710af03f7ed24549210d69d08bddc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffd88f91a6717fe619b3bcaa0328e6f058bf2386")]
 [assembly: System.Reflection.AssemblyProductAttribute("SportMaster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SportMaster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

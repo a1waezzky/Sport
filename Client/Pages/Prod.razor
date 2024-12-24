@@ -1,0 +1,71 @@
+﻿@page "/products"
+
+<section id="">
+    <div class="container">
+        <h1>Цветы</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Prise</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var flow in result)
+                {
+                    <tr>
+                        <th scope="row">@flow.CustomerId</th>
+                        <td>@flow.FirstName</td>
+                        <td>@flow.LastName</td>
+                        <td>@flow.Email</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+@code {
+    public class Customer
+    {
+        public int CustomerId { get; set; }
+
+        public string FirstName { get; set; } = null!;
+
+        public string LastName { get; set; } = null!;
+
+        public string Email { get; set; } = null!;
+
+        public string? Phone { get; set; }
+    }
+
+    public Customer[] result = new Customer[] { };
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = new HttpClient();
+
+        client.BaseAddress = new Uri("https://apisport.onrender.com/");
+
+        result = await client.GetFromJsonAsync<Customer[]>("api/Customer");
+
+        return;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
